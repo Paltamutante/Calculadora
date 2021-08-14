@@ -5,16 +5,16 @@ if(isset($_POST['num1']) && isset($_POST['num2'])){
     $num2 = intval($_POST['num2']);
     
     if(isset($_POST['sumar'])){
-        $resultado=floatval($num1+$num2);    
+        //$resultado=floatval($num1+$num2);    
     }
     if(isset($_POST['restar'])){
-        $resultado=floatval($num1-$num2);    
+        //$resultado=floatval($num1-$num2);    
     }
     if(isset($_POST['multiplicar'])){
-        $resultado=floatval($num1*$num2);    
+        //$resultado=floatval($num1*$num2);    
     }
     if(isset($_POST['dividir'])){
-        $resultado=floatval($num1/$num2);    
+       //$resultado=floatval($num1/$num2);    
     }
 }
 
@@ -31,6 +31,12 @@ if(isset($_POST['num1']) && isset($_POST['num2'])){
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Goolge Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> 
+    
 </head>
 <body>
     <div class="contenido">
@@ -41,11 +47,11 @@ if(isset($_POST['num1']) && isset($_POST['num2'])){
                 <input type="text" name="num2" placeholder="ingrese otro numero" value="">
                
                 <input type="submit" name="sumar" class="sum" value="+">
-                <input type="submit" name="restar" class="res" value="-">
+                <input type="submit" name="restar" class="res" value="-"><br>
                 <input type="submit" name="multiplicar" class="mul" value="*">
                 <input type="submit" name="dividir" class= "div" value="/">
 
-            <h1 name="recuadro"><?php echo $resultado;?></h1>
+            <h1 name="recuadro"><?= "";?></h1>
         </form>
     </div>    
 </body>
