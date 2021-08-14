@@ -1,0 +1,14 @@
+.contenido{
+    background-color: aqua;
+    text-align: center;
+    padding-top: 30px;
+}
+.sum, .res, .mul, .div{
+    border-radius: 10px;
+    padding:10px 30px;
+    
+}
+
+input[type="text"]{
+    display:block;
+}
